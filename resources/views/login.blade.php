@@ -16,8 +16,17 @@
         <img class="left" src="/image/logo.png" alt="">
         <div class="right nav">
             <div style="display: flex;">
-                <a class="home" href="/welcome">Home</a>
-                <a class="about" href="">About</a>
+                <a class="home" href="/">Home</a>
+                <a class="about" href="/about">About</a>
+                <li class="nav-item dropdown">
+                    <a class="login nav-link dropdown-toggle" href="/registration" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Register
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="/registration_hospital">As a Hospital</a></li>
+                      <li><a class="dropdown-item" href="/registration">As a Receiver</a></li>
+                    </ul>
+               </li>
             </div>
         </div>
     </div >

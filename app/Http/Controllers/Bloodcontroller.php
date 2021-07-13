@@ -134,8 +134,10 @@ class Bloodcontroller extends Controller
         return view('receiver')->with(compact('viewdata2'));
     }
     function view($id)
-    {
-        $data=DB::table('bloods')->where('id',$id)->get();
+    {   
+
+        $data=DB::table('hospitals')->join('bloods','hospitals.hospital_name','=','bloods.hospital')
+        ->where('bloods.id',$id)->get();
         return view('viewdetails',compact('data'));
     }
 }

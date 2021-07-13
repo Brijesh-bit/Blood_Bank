@@ -16,8 +16,8 @@
         <img class="left" src="/image/logo.png" alt="">
         <div class="right nav">
             <div style="display: flex;">
-                <a class="home" href="/welcome">Home</a>
-                <a class="about" href="">About</a>
+                <a class="home" href="/">Home</a>
+                <a class="about" href="/about">About</a>
             </div>
         </div>
     </div >

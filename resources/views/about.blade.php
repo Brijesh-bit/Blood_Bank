@@ -21,6 +21,7 @@
             <div style="display: flex;">
                 <a class="home" href="/">Home</a>
                 <a class="about" href="/about">About</a>
+                <!-- <a class="login" href="/login">Login</a> -->
                 <li class="nav-item dropdown">
                     <a class="login nav-link dropdown-toggle" href="/registration" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     LogIn
@@ -42,37 +43,11 @@
             </div>
         </div>
     </div>
-    <div style="display: flex;">
-        <div class="table1">
-            <table class="table caption-top table-striped" style="border: 1px solid black">
-          <caption class="table-head">Blood Units Available :</caption>
-          <div class="tag1">Please Register or Login for Blood Samples Details And Hospital Details :</div>
-          <thead>
-            <tr>
-              <th scope="col">No.</th>
-              <!-- <th scope="col">Hospital</th> -->
-              <th scope="col">Blood Group</th>
-              <th scope="col">Available Unit</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            @foreach($viewdata as $data)
-            <tr>
-              <th scope="row">{{ $data->id}}</th>
-              <!-- <td >{{ $data->hospital}}</td> -->
-              <td>{{ $data->blood_group}}</td>
-              <td style="padding-left: 35px">{{ $data->unit}}</td>
-              <td><button style="background-color: red; border-radius: 5px;"><a class="receiver_d" href="/login">Details</a></button></td>
-            </tr>
-            @endforeach
-          </tbody>
-        </table>
-        
-        </div>
-        <div style="width: 50% float: right; margin-top: 40px;">
-            <img src="/image/donation.jpg" class="image" alt="">
-        </div>
+    <div>
+       <h1>About:</h1><br>
+       <br>
+       <h4>This Website is developed for Education Purpose Only</h4><br>
+       <h4>For any details and enquiry please mail us on <b>kaharbrijesh7@gmail.com</b></h4>
     </div>
 
 </body>

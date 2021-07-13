@@ -21,9 +21,9 @@
         <img class="left" src="/image/logo.png" alt="">
         <div class="right nav">
             <div style="display: flex;">
-                <a class="home" href="/welcome">Home</a>
-                <a class="about" href="">About</a>
-                <a class="login" href="/welcome">LogOut</a>
+                <a class="home" href="/">Home</a>
+                <a class="about" href="/about">About</a>
+                <a class="login" href="/">LogOut</a>
             </div>
         </div>
     </div >
@@ -47,7 +47,7 @@
                     <td >{{ $data->hospital}}</td>
                     <td>{{ $data->blood_group}}</td>
                     <td style="padding-left: 35px">{{ $data->unit}}</td>
-                    <td><a class="receiver_d" href="/viewdetails/{{$data->id}}">Details</a></td>
+                    <td><button style="background-color: red; border-radius: 5px;"><a class="receiver_d" href="/viewdetails/{{$data->id}}">Details</a></button></td>
                     </tr>
                     @endforeach
                 </tbody>
